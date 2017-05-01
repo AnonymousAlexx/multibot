@@ -1,0 +1,43 @@
+credentials:
+    token: "Mjg2NTYxMDYxMDk0ODE3Nzkz.C-Otig.rsK7pbnec4kcPH6DmMRwivOSJVI" # Add the token of your bot here
+	globalCommandPrefix: "m#"
+ownerID: "220664822734258176" # Add the ID of your Discord account here
+serverID: "292882092654723072" # Add the ID of the server the bot should run on here
+plugins: # Plugins listed here will be enabled
+    general: {m#commands - Shows all available commands
+Synonyms: m#help
+m#about - Shows a short description of the bot
+m#kill - Stops the bot
+Synonyms: m#stop
+m#me - Shows the ID of the user
+Synonyms: m#userid
+m#enable <plugin> - Enables a plugin
+Example: !enable dice
+m#op <user id or mention> <permission> - Gives an user a permission
+m#deop <user id or mention> <permission> - Removes a permission from an user
+m#prefix <new prefix> - Changes the global command prefix
+Example: !prefix $
+m#owner <user id or mention> - Changes the owner of the bot
+m#rename <new name> - Renames the bot
+m#reload - Reloads the config
+Synonyms: m#refresh
+m#avatar <url or relative path> - Gives the bot an avatar
+Setting it to null will remove the avatar.}
+	music: # m#play <link> - Adds a song to the playlist
+Currently only YouTube supported
+m#remove <Position on the playlist> - Removes a song from the playlist
+m#skip - Skips the current song
+m#resume - Starts the playlist
+m#pause - Stops the playlist
+m#np - Displays the current song
+m#queue - Displays all songs on the playlist
+!music join <Channel name> - Lets the bot enter a voice channel.
+If you leave the channel name empty, it will join your current voice channel
+Example: !music join General
+Synonyms: !music enter <Channel name>
+
+        library: "../music"
+        skipLimit: 1
+        announceSongs: true
+        autoJoinVoiceChannel: "music"
+        maxLength: 15
